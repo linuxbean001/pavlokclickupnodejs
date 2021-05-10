@@ -1,0 +1,7 @@
+nav.navbar.navbar-expand-sm.bg-dark.navbar-dark {
+    min-height: 55px;
+}
+ul li.nav-item.active a {
+    color: #fff;
+    font-weight: 500;
+}

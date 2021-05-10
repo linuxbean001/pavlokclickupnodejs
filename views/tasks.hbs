@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pavlok Clickup Integration</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">My Tasks</a>
+    </nav>
+    <section class="jumbotron text-center">
+        <div class="container">
+           <h1 class="jumbotron-heading">Task's List</h1>
+           <a href="/webhook/">webhook</a>
+           <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Task Id</th>
+                        <th>Task Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#tasks}}
+                        <tr>
+                            <td>{{id}}</td>
+                            <td>{{name}}</td>
+                        </tr>
+                    {{/tasks}}
+                </tbody>
+            </table>             
+        </div>
+    </section>
+</body>
+</html>

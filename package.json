@@ -1,0 +1,20 @@
+{
+  "name": "pavlokclickupintegration",
+  "version": "1.0.0",
+  "description": "A pavlok clickup integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Linuxbean Team",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "pavlok": "^0.2.2",
+    "pavlok-beta-api-login": "^2.0.5",
+    "pg": "^8.6.0",
+    "request-promise": "^4.2.6"
+  }
+}
