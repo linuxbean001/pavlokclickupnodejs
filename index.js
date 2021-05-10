@@ -5,6 +5,7 @@ const request = require('request');
 const rp = require('request-promise');
 const axios = require('axios');
 const { Client } = require('pg');
+const port = process.env.PORT || 8000 ;
 
 const BASE_URL = "http://pavlok-mvp.herokuapp.com";
 const pavlokcallbackUrl = "http://localhost:8000/auth/pavlok/result";
@@ -294,6 +295,6 @@ app.get("/webhook/", function(req, result){
     //console.log(myclickupToken);
 });
 
-app.listen(8000, function(){
+app.listen(port, function(){
 	console.log("Visit the IP address of this machine, or http://localhost:8000/.");
 });
