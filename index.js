@@ -8,14 +8,14 @@ const { Client } = require('pg');
 const port = process.env.PORT || 8000 ;
 
 const BASE_URL = "http://pavlok-mvp.herokuapp.com";
-const pavlokcallbackUrl = "http://localhost:8000/auth/pavlok/result";
+const pavlokcallbackUrl = "https://pavlok-clickup-linuxbean.herokuapp.com/auth/pavlok/result";
 const pavlokcallbackUrlPath = "/auth/pavlok/result";
 
-const pavlokclientid = '58ad5cde6ae1889bb751b05059aa03aff9e4045f63c8767e9bd31e4e556c7919';
-const pavloksecretid = '2bbb0838fe46e1ddf76d66bbf03a3c50bc036958c5e7c601ab7f49ccbc9990c0';
-const clickupclientid = '5SNKGYFUY2K9K1XI7ZLXRMJ0D30E8BVH';
-const clickupsecretid = 'WOA44YDN5I4PGFG9MVMAYIJR3NQ2GD0M1QDG733DMIZ737WD3MRVXIXLBAHDBRIW';
-const clickupredirecturi = 'localhost:8000';
+const pavlokclientid = 'ecc1be32cd55e1a09e1af8ff0a73174fa50c5d158dda650d977738c5ae10f9d7';
+const pavloksecretid = '3f3c2407caf757efb94cfe67587a579f497fbd36a3c84597fbad249ac437398d';
+const clickupclientid = 'KLUIBITGYCDF0XWLYIM44T2D6FFTIGO0';
+const clickupsecretid = 'CLKU1XUZLM8Y6NZ2GT48CUPPU44DVAO0S5VIZA0NIDUWHMUSBDQJ2I7YUKI5ODSX';
+const clickupredirecturi = 'pavlok-clickup-linuxbean.herokuapp.com';
 
 const clickup_token = '';
 console.log("Setting up remote...");
